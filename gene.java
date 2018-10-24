@@ -1,34 +1,25 @@
 import java.util.*;
-class Ext
+class que3
 {
-	public static <E> void sort123(E[] arrayb)
-	{
-		LinkedList<E> l1=new LinkedList<E>();
-		for(int i=0;i<arrayb.length;i++)
-		{
-			l1.add(arrayb[i]);
-		}
-		l1.sort(null);
-		for(E i:l1)
-		{
-			System.out.print(i+" ");
-		}
-		System.out.println();
+  public static <E> void printArray(E[] inputArray)
+  {
+    for (E element : inputArray)
+      System.out.printf("%s ", element);
 
-	}
+    System.out.println();
+  }
 
-}
-public class gene
-{
-	public static void main(String[] x)
-	{
-		Integer arr[]={2,3,1,6,4,7,5};
-		Double ar1[]={2.3,5.6,4.0,3.1,8.9};
-		String ar2[]={"abd","aab","bcd","cba"};
-		Character ar3[]={'a','b','c','d','e'};
-		Ext.sort123(arr);
-		Ext.sort123(ar1);
-		Ext.sort123(ar2);
-		Ext.sort123(ar3);
-	}
+  public static void main(String args[])
+  {
+    Integer[] integerArray = { 1, 2, 3, 4, 5, 6 };
+    Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
+    Character[] characterArray = { 'H', 'E', 'L', 'L', 'O' };
+
+    System.out.println("Array integer Array contains:");
+    printArray(integerArray);
+    System.out.println("\nArray double Array contains:");
+    printArray(doubleArray);
+    System.out.println("\nArray character Array contains:");
+    printArray(characterArray);
+  }
 }
